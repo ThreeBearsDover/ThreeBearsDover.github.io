@@ -1,4 +1,4 @@
-angular.module('threebears', ['ui.router'])
+angular.module('threebears', ['ui.router', 'ui.bootstrap'])
 
 
 
@@ -13,7 +13,8 @@ angular.module('threebears', ['ui.router'])
       .state('home', {
          url           : '/',
          templateUrl   : 'js/home/homeView.html',
-         controller    : 'homeCtrl'
+         controller    : 'homeCtrl',
+         controllerAs  : 'home'
       })
 
       .state('bungalow', {
